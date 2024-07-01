@@ -2,5 +2,14 @@
   "Home": {
     "title": "Crea sitios web personalizados",
     "description": "Pro version of popular Astroship starter template made for startups. Built with Astro and Tailwind CSS."
+  },
+  "Navbar": {
+    "features": "Novedades",
+    "pricing": "Precios",
+    "about": "Nosotros",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "login": "Iniciar sesión",
+    "signup": "Try for free"
   }
 }
