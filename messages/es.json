@@ -11,5 +11,37 @@
     "contact": "Contacto",
     "login": "Iniciar sesión",
     "signup": "Try for free"
+  },
+  "Footer Banner": {
+    "title": "Build faster websites",
+    "description": "Pull content from anywhere and serve it fast with Astro's next-gen island architecture.",
+    "button": "Sign up for a 14-day Trial"
+  },
+  "Footer": {
+    "socialMediaDescription": "Astroship Pro is a premium astro website template made for saas & startups. Built with Astro and Tailwind CSS.",
+    "rights": "Copyright © 2024 Astroship. All rights reserved.",
+    "terms": "Términos",
+    "privacy": "Privacidad"
+  },
+  "Footer S1": {
+    "title": "Compañía",
+    "about": "Nosotros",
+    "careers": "Carreras",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "Footer S2": {
+    "title": "Compañía",
+    "about": "Nosotros",
+    "careers": "Carreras",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "Footer S3": {
+    "title": "Compañía",
+    "about": "Nosotros",
+    "careers": "Carreras",
+    "blog": "Blog",
+    "contact": "Contacto"
   }
 }

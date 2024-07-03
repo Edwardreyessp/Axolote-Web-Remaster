@@ -2,58 +2,68 @@ import Link from "next/link";
 import { Banner } from "./footer/Banner";
 import { LinkSection } from "./footer/LinkSection";
 import { SocialMedia } from "./footer/SocialMedia";
+import { useTranslations } from "next-intl";
 
-export const Footer = () => {
+type Props = {
+  hasBanner?: boolean;
+};
+
+export const Footer = ({ hasBanner = true }: Props) => {
+  const t = useTranslations("Footer");
+  const t1 = useTranslations("Footer S1");
+  const t2 = useTranslations("Footer S2");
+  const t3 = useTranslations("Footer S3");
+
   return (
     <footer className="flex flex-col bg-slate-100">
-      <Banner />
+      {hasBanner && <Banner />}
 
       <section className="flex flex-col xl:flex-row gap-8 xl:gap-36 px-5 xl:px-24 py-14">
         <SocialMedia />
 
         <section className="flex-1 flex flex-col xl:flex-row justify-between gap-5">
-          <LinkSection title="Company">
+          <LinkSection title={t1("title")}>
             <Link href="/about" className="text-sm">
-              About
+              {t1("about")}
             </Link>
             <Link href="/about" className="text-sm">
-              Careers
+              {t1("careers")}
             </Link>
             <Link href="/about" className="text-sm">
-              Blog
+              {t1("blog")}
             </Link>
             <Link href="/about" className="text-sm">
-              Contact
-            </Link>
-          </LinkSection>
-
-          <LinkSection title="Company">
-            <Link href="/about" className="text-sm">
-              About
-            </Link>
-            <Link href="/about" className="text-sm">
-              Careers
-            </Link>
-            <Link href="/about" className="text-sm">
-              Blog
-            </Link>
-            <Link href="/about" className="text-sm">
-              Contact
+              {t1("contact")}
             </Link>
           </LinkSection>
 
-          <LinkSection title="Company">
+          <LinkSection title={t2("title")}>
             <Link href="/about" className="text-sm">
-              About
+              {t2("about")}
             </Link>
             <Link href="/about" className="text-sm">
-              Careers
+              {t2("careers")}
             </Link>
             <Link href="/about" className="text-sm">
-              Blog
+              {t2("blog")}
             </Link>
             <Link href="/about" className="text-sm">
-              Contact
+              {t2("contact")}
+            </Link>
+          </LinkSection>
+
+          <LinkSection title={t3("title")}>
+            <Link href="/about" className="text-sm">
+              {t3("about")}
+            </Link>
+            <Link href="/about" className="text-sm">
+              {t3("careers")}
+            </Link>
+            <Link href="/about" className="text-sm">
+              {t3("blog")}
+            </Link>
+            <Link href="/about" className="text-sm">
+              {t3("contact")}
             </Link>
           </LinkSection>
         </section>
@@ -62,14 +72,14 @@ export const Footer = () => {
       <hr />
 
       <div className="flex flex-col gap-2 items-center pt-9 pb-14 text-sm">
-        <p>Copyright © 2024 Astroship. All rights reserved.</p>
+        <p>{t("rights")}</p>
         <div className="text-xs">
           <span>
-            <Link href="/terms">Terms</Link>
+            <Link href="/terms">{t("terms")}</Link>
           </span>
           <span> ・ </span>
           <span>
-            <Link href="/privacy">Privacy</Link>
+            <Link href="/privacy">{t("privacy")}</Link>
           </span>
         </div>
       </div>
