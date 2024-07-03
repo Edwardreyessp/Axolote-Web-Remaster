@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Logo } from "@/components/ui/logo";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { useState } from "react";
@@ -13,13 +14,7 @@ export const MenuNavbar = ({ children }: { children: React.ReactNode }) => {
       <div className="flex w-full justify-between items-center">
         <ul>
           <li>
-            <Link
-              href="/"
-              className="text-lg font-semibold text-content-foreground"
-            >
-              <span className="text-primary">Axolote</span>
-              <span>Web</span>
-            </Link>
+            <Logo />
           </li>
         </ul>
         <Button

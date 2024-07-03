@@ -67,6 +67,18 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
+
+  a {
+    @apply text-content-foreground;
+  }
+
+  a:hover {
+    @apply text-primary;
+  }
+
+  p {
+    @apply text-content-foreground;
+  }
 }
 
 @layer base {

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Logo } from "@/components/ui/logo";
 import { ChevronRightIcon } from "@radix-ui/react-icons";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -10,13 +11,7 @@ export const DesktopNavbar = () => {
     <nav className="hidden lg:flex justify-around p-5 items-center bg-background sticky top-0">
       <ul className="flex-1 text-center justify-center">
         <li>
-          <Link
-            href="/"
-            className="text-lg font-semibold text-content-foreground"
-          >
-            <span className="text-primary">Axolote</span>
-            <span>Web</span>
-          </Link>
+          <Logo />
         </li>
       </ul>
 
