@@ -31,17 +31,14 @@ export const MobileNavbar = () => {
         <ul className="flex w-full gap-3 items-center flex-1 justify-center">
           <li className="flex-1">
             <Link href="/login">
-              <Button
-                variant="secondary"
-                className="text-primary rounded-full w-full"
-              >
+              <Button variant="secondary" className="w-full">
                 {t("login")}
               </Button>
             </Link>
           </li>
           <li className="flex-1">
             <Link href="/signup">
-              <Button className="rounded-full w-full">
+              <Button className="w-full">
                 {t("signup")}
                 <ChevronRightIcon className="ml-2 h-4 w-4" />
               </Button>

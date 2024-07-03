@@ -43,5 +43,11 @@
     "careers": "Carreras",
     "blog": "Blog",
     "contact": "Contacto"
+  },
+  "Home Header": {
+    "title": "Crea sitios web personalizados",
+    "description": "Pro version of popular Astroship starter template made for startups. Built with Astro and Tailwind CSS.",
+    "buttonPrimary": "Comienza ahora",
+    "buttonSecondary": "Ver planes"
   }
 }

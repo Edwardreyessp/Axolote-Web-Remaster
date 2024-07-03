@@ -43,7 +43,7 @@ export const DesktopNavbar = () => {
         </li>
         <li>
           <Link href="/signup">
-            <Button className="rounded-full">
+            <Button>
               {t("signup")}
               <ChevronRightIcon className="ml-2 h-4 w-4" />
             </Button>
